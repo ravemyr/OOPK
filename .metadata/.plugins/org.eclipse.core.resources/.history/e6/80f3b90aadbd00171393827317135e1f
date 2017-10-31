@@ -1,0 +1,19 @@
+package labb1;
+public class E32 {
+
+	public static void main(String[] args) {
+		Human[] humanArray;
+		humanArray = new Human[15];
+		for(int i = 0; i<15; i++){
+			Human newHuman = Human.randomHuman();
+			humanArray[i] = newHuman;
+			if (i>1) {
+				System.out.println(i);
+			System.out.println(humanArray[i]);
+			System.out.println(humanArray[i-1]);
+			}
+		}
+	}
+}
+		
+

@@ -1,0 +1,25 @@
+package labb1;
+
+public class Human {
+
+	public static void main(String[] args) {
+		Human person1 = new Human(25, "Lars");
+		person1.getAge();
+		person1.getName();
+	}
+	static int age;
+	static String name;
+	private Human(int ageIn, String nameIn) {
+		Human.name = nameIn;
+		Human.age = ageIn;
+	}
+	public String toString() {
+		return "name: " +name + "age: " + age;	
+		}
+	int getAge() {
+		return age;
+	}
+	String getName(){
+		return name;
+	}
+}

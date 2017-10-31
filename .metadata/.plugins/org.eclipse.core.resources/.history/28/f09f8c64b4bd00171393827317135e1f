@@ -1,0 +1,22 @@
+package labb1;
+
+import java.util.Arrays;
+
+public class E32 {
+
+	public static void main(String[] args) {
+		Human[] humanArray;
+		humanArray = new Human[15];
+		for(int i = 0; i<humanArray.length; i++){
+			Human newHuman = Human.randomHuman();
+			humanArray[i] = newHuman;
+			System.out.println(newHuman);
+			System.out.print(humanArray[3]);
+			System.out.print(humanArray[7]);
+		}
+		System.out.print(humanArray[3]);
+		System.out.println(Arrays.toString(humanArray));
+	}
+}
+		
+
